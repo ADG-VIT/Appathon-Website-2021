@@ -1,0 +1,151 @@
+/* Basic */
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+}
+a {
+	text-decoration: none;
+}
+/* Scrollbar */
+:root::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+:root::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+}
+
+:root::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #555;
+}
+
+/* Sections */
+.landing,
+.about,
+.tracks,
+.timeline,
+.partners,
+.faq,
+.footer {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	padding: 4%;
+	border: 2px solid red;
+}
+
+/* Landing */
+.landing {
+	padding: 0% !important;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#vid {
+	z-index: -1;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+	position: absolute;
+	z-index: 4;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	height: 100vh;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* About */
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img.title2 {
+	height: auto;
+	width: 33%;
+}
+.about-para {
+	/* font-family: Neue Haas Grotesk Display Pro; */
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 175.5%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+
+.banner {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 55px 20px 55px;
+	width: 80vw;
+	height: 129px;
+	border-radius: 10px;
+	background: url(./assets/banner.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.banner-text .h3 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #ffffff;
+}
+
+
+.banner-text .h4 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #cecece;
+}
