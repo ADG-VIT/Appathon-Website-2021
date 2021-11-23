@@ -1,15 +1,18 @@
 /* Basic */
-* {
+* , *::before , *::after {
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
-html,
-body {
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-	background: #000000;
+html {
 	font-size: 24px;
+}
+
+body {
+	background: #000000;
+	width: calc(100vw - 8px);
 }
 
 a {
@@ -85,21 +88,21 @@ a {
 .faq,
 .footer {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	overflow: hidden;
 	padding: 4%;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .heading {
 	font-family: Termina W05 Bold;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 2rem;
 	line-height: 175.5%;
 	/* or 84px */
 
-	letter-spacing: 0.02em;
+	letter-spacing: 0.02rem;
 	text-transform: uppercase;
 
 	color: #ffffff;
@@ -127,7 +130,7 @@ a {
 	color: #f1f1f1;
 	height: 100vh;
 	width: 100%;
-	padding: 20px;
+	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -138,12 +141,14 @@ a {
 	position: absolute;
 	left: 5%;
 	top: 5%;
+	height: 3rem;
+	width: auto;
 }
 
 .Appathon-img {
 	width: 45%;
 	height: auto;
-	margin-top: 5em;
+	margin-top: 5rem;
 }
 
 .date {
@@ -154,9 +159,9 @@ a {
 	font-family: Termina W05 Bold;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	text-align: center;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	margin: 0;
 	color: #ffffff;
@@ -166,9 +171,9 @@ a {
 	font-family: Axis Extrabold;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 0.75em;
+	font-size: 0.75rem;
 	text-align: center;
-	letter-spacing: 0.45em;
+	letter-spacing: 0.45rem;
 	text-transform: uppercase;
 	margin: 0;
 	color: rgba(255, 255, 255, 0.49);
@@ -176,8 +181,8 @@ a {
 
 .reg-btn {
 	cursor: pointer;
-	width: 250px;
-	height: 65px;
+	width: 10rem;
+	height: 3rem;
 }
 
 .deadline {
@@ -188,16 +193,22 @@ a {
 	padding-top: 2%;
 }
 
+.deadline img {
+	height: 3rem;
+	width: auto;
+	margin-bottom: 1rem;
+}
+
 .deadline-line {
 	font-family: Neue Haas Grotesk Medium;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1rem;
+	line-height: 1.3rem;
 	display: flex;
 	align-items: center;
 	text-align: center;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.05rem;
 	text-transform: capitalize;
 
 	color: rgba(196, 196, 196, 0.47);
@@ -208,12 +219,12 @@ a {
 	font-family: Monument Extended;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 144px;
+	font-size: 7rem;
 	line-height: 144%;
 	/* or 207px */
 
 	text-align: center;
-	letter-spacing: 0.155em;
+	letter-spacing: 0.155rem;
 	text-transform: capitalize;
 
 	color: rgba(255, 255, 255, 0.2);
@@ -243,7 +254,7 @@ img.title2 {
 	font-family: Neue Haas Grotesk Medium;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 1.5rem;
 	line-height: 175.5%;
 	text-align: center;
 	letter-spacing: 0.02em;
@@ -252,13 +263,13 @@ img.title2 {
 }
 
 .banner {
-	margin-top: 50px;
+	margin-top: 2.5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 55px 20px 55px;
 	width: 80vw;
-	height: 129px;
+	height: 5.4rem;	
 	border-radius: 10px;
 	background: url(./assets/banner.png);
 	background-position: center;
@@ -270,8 +281,8 @@ img.title2 {
 	font-family: Neue Haas Grotesk Medium;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1rem;
+	line-height: 1.2rem;
 	/* identical to box height */
 
 	text-align: center;
@@ -284,8 +295,8 @@ img.title2 {
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 1rem;
+	line-height: 1.75rem;
 	/* identical to box height */
 
 	text-align: center;
@@ -312,8 +323,8 @@ img.title2 {
 	font-family: MADE;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 24px;
-	line-height: 36px;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	/* identical to box height, or 150% */
 	color: #ffffff;
 	display: flex;
@@ -327,23 +338,52 @@ img.title2 {
 }
 
 @media only screen and (min-width: 401px) and (max-width: 576px) {
+
+	html{
+		font-size: 12px;
+	}
+
+	.timer {
+		font-size: 4.5rem;
+	}
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+	html{
+		font-size: 14px;
+	}
+
+	.timer {
+		font-size: 5rem;
+	}
 }
 @media only screen and (min-width: 769px) and (max-width: 990px) {
+
+	html{
+		font-size: 18px;
+	}
+
+	.timer {
+		font-size: 5.5rem;
+	}
 }
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
+
+	html{
+		font-size: 20px;
+	}
+
+	.timer {
+		font-size: 6rem;
+	}
 }
 
 @media only screen and (max-width: 400px) {
-	/* .faq {
-		height: 300vh !important;
-	} */
-	.timeline {
-		display: none;
+
+	html{
+		font-size: 10px;
 	}
 
-	.timer{
-		font-size: 36px;
+	.timer {
+		font-size: 4rem;
 	}
 }
