@@ -2,6 +2,7 @@
 * {
 	box-sizing: border-box;
 }
+
 html,
 body {
 	overflow-x: hidden;
@@ -10,9 +11,11 @@ body {
 	background: #000000;
 	font-size: 24px;
 }
+
 a {
 	text-decoration: none;
 }
+
 /* Scrollbar */
 :root::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -41,6 +44,7 @@ a {
 	src: local("Neue Haas Grotesk Display Medium"),
 		url("./fonts/NeueHaasDisplayMedium.woff") format("woff");
 }
+
 @font-face {
 	font-family: "Termina W05 Bold";
 	font-style: normal;
@@ -48,6 +52,7 @@ a {
 	src: local("Termina W05 Bold"),
 		url("./fonts/TerminaW05Bold.ttf") format("truetype");
 }
+
 @font-face {
 	font-family: "Axis Extrabold";
 	font-style: normal;
@@ -55,6 +60,7 @@ a {
 	src: local("Axis Extrabold"),
 		url("./fonts/AxisExtrabold.otf") format("opentype");
 }
+
 @font-face {
 	font-family: "Monument Extended";
 	font-style: normal;
@@ -62,6 +68,7 @@ a {
 	src: local("Monument Extended"),
 		url("./fonts/MonumentExtended-Ultrabold.otf") format("opentype");
 }
+
 @font-face {
 	font-family: "MADE";
 	font-style: normal;
@@ -88,6 +95,7 @@ a {
 .landing {
 	padding: 0% !important;
 }
+
 /* Style the video: 100% width and height to cover the entire window */
 #vid {
 	z-index: -1;
@@ -112,6 +120,7 @@ a {
 	justify-content: space-around;
 	align-items: center;
 }
+
 .newlogo {
 	position: absolute;
 	left: 5%;
@@ -123,9 +132,11 @@ a {
 	height: auto;
 	margin-top: 5em;
 }
+
 .date {
 	padding-top: 5%;
 }
+
 .date .landing-date {
 	font-family: Termina W05 Bold;
 	font-style: normal;
@@ -155,6 +166,7 @@ a {
 	width: 250px;
 	height: 65px;
 }
+
 .deadline {
 	display: flex;
 	flex-direction: column;
@@ -162,6 +174,7 @@ a {
 	align-items: center;
 	padding-top: 2%;
 }
+
 .deadline-line {
 	font-family: Neue Haas Grotesk Medium;
 	font-style: normal;
@@ -192,6 +205,7 @@ a {
 
 	color: rgba(255, 255, 255, 0.2);
 }
+
 /* About */
 .about {
 	display: flex;
@@ -200,15 +214,18 @@ a {
 	justify-content: space-around;
 	height: 120vh !important;
 }
+
 .about-head {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 img.title2 {
 	height: auto;
 	width: 33%;
 }
+
 .about-para {
 	font-family: Neue Haas Grotesk Medium;
 	font-style: normal;
@@ -271,6 +288,7 @@ img.title2 {
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
+
 .timeline::-webkit-scrollbar {
 	display: none;
 	/* for Chrome, Safari, and Opera */
@@ -293,4 +311,19 @@ img.title2 {
 /* FAQ */
 .faq {
 	height: 150vh !important;
+}
+
+
+@media only screen and (min-width: 1280px) {}
+
+@media only screen and (min-width: 990px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 400px) {
+	.faq {
+		height: 300vh !important;
+	}
 }
