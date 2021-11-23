@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background: #000000;
+}
+
+.partners {
+  margin: 5%;
+}
+.heading {
+  font-family: TerminaW05-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 175.5%;
+  /* or 84px */
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+span a {
+  display: inline-block;
+  font-family: MADE Soulmaze;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+  margin-right: 5%;
+  text-decoration: none;
+}
+
+span {
+  white-space: nowrap;
+  overflow-x: auto;
+}
