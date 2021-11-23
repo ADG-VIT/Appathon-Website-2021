@@ -8,11 +8,13 @@
     <title>App-a-Thon 2021</title>
 
     <script type="text/javascript">
-        document.getElementById("speakers").onclick = function() {
+        function speakers() {
             document.getElementById("speakers").style.display = "block";
+            document.getElementById("sponsors").style.display = "none";
         }
-        document.getElementById("sponsors").onclick = function() {
+        function sponsors() {
             document.getElementById("sponsors").style.display = "block";
+            document.getElementById("speakers").style.display = "none";
         }
     </script>
 
@@ -21,8 +23,8 @@
     <div class="partners">
         <h1 class="heading">Partners</h1>
         <span>
-            <a href="#speakers">SPEAKERS</a>
-            <a href="#sponsors">SPONSORS</h2>
+            <a href="#speakers" onclick="speakers()">SPEAKERS</a>
+            <a href="#sponsors" onclick="sponsors()">SPONSORS</h2>
         </span>
         <div id="speakers" style="display: none">
             <p>speakers</p>
