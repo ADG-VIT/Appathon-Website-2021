@@ -30,6 +30,7 @@ function speakers() {
 	document.getElementById("speakers").style.display = "block";
 	document.getElementById("sponsors").style.display = "none";
 }
+
 function sponsors() {
 	document.getElementById("sponsors").style.display = "block";
 	document.getElementById("speakers").style.display = "none";
@@ -57,3 +58,24 @@ function topFunction() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+function myFunction(x) {
+	if (x.matches) { // If media query matches
+		document.body.querySelector('#edate').innerHTML = "26 - 28 NOVEMBER";
+
+		document.body.querySelector('.register').style.height = "55px";
+
+		document.body.querySelector('.register').style.width = "180px";
+
+		document.body.querySelector('.reg-btn').style.width = "180px";
+
+		document.body.querySelector('.reg-btn').style.height = "55px";
+
+
+	}
+}
+
+var x = window.matchMedia("(max-width: 450px)")
+myFunction(x) // Call listener function at run time
+x.addEventListener(myFunction) // Attach listener function on state changes
