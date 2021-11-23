@@ -1,0 +1,21 @@
+.tracks {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin: 0;
+    padding: 4em;
+}
+
+.t-head {
+    font-family: Termina W05 Bold;
+    font-size: 1.5em;
+    text-align: left;
+
+}
+
+#t-img {
+    padding-top: 6em;
+}
