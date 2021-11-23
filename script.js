@@ -22,4 +22,15 @@ function updateTimer() {
 
 	timer.innerHTML = "0" + d + ":" + h + ":" + m + ":" + s;
 }
+
+//Toggle
 setInterval("updateTimer()", 1000);
+
+function speakers() {
+	document.getElementById("speakers").style.display = "block";
+	document.getElementById("sponsors").style.display = "none";
+}
+function sponsors() {
+	document.getElementById("sponsors").style.display = "block";
+	document.getElementById("speakers").style.display = "none";
+}
