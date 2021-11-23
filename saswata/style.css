@@ -13,7 +13,13 @@ a:link {
     text-decoration: none;
 }
 
-
+/* FONTS */
+@font-face {
+    font-family: 'Neue Haas Grotesk Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neue Haas Grotesk Display Medium'), url('./fonts/NeueHaasDisplayMedium.woff') format('woff');
+    }
 /* FAQ Page */
 
 .faq_page {
