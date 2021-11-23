@@ -1,7 +1,6 @@
 /* Timeline */
 
 .timeline .heading {
-	padding-left: 5%;
 	margin-bottom: 0;
 }
 .timeline_main {
@@ -10,13 +9,30 @@
 	align-items: flex-end;
 	justify-content: center;
 }
+
+.timeline-top {
+	z-index: -4;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	border: 2px solid yellow;
+}
+
+.timeline-bottom {
+	z-index: -4;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	border: 2px solid orange;
+}
 .timeline_info {
 	/* border: 2px solid purple; */
 	padding: 5%;
 	padding-top: 0;
 	width: 100%;
-	height: 100vh;
+	/* height: 100; */
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	/* align-items: center; */
 	overflow-y: scroll;
