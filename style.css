@@ -370,7 +370,7 @@ a {
 /* FAQ */
 .faq {
 	height: max-content;
-	margin-bottom: 20px;
+	padding: 4em;
 }
 
 .faq_page {
@@ -406,7 +406,6 @@ a {
 .box {
 	border: 1px solid #202020;
 	width: 90%;
-	margin-left: 2em;
 	padding: 1%;
 }
 
@@ -425,6 +424,7 @@ a {
 	padding-top: 1em;
 	color: #ffffff;
 	background: #0c0c0c;
+	margin-bottom: 5px;
 }
 
 .ques {
