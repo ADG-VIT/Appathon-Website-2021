@@ -670,7 +670,109 @@ a {
 
 
 
-@media only screen and (min-width: 991px) and (max-width: 1280px) {}
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+
+	.heading {
+		font-size: 3em;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	/* Landing */
+
+	.newlogo {
+		height: auto;
+		width: 15%;
+	}
+
+	.Appathon-img {
+		width: 60%;
+	}
+
+	#edate {
+		font-size: 1em;
+	}
+
+	.date .landing-para {
+		margin-top: 1em;
+	}
+
+	.reg-btn {
+		height: auto;
+		width: 45%;
+	}
+
+	.timer {
+		font-size: 3.5em;
+	}
+
+	/*About*/
+
+	.about {
+		height: max-content;
+	}
+
+	.title2 {
+		width: 50%;
+		margin-top: 20px;
+	}
+
+	.about-para {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		width: 700px;
+		line-height: 2em;
+		font-size: 28px;
+	}
+
+
+	/*Tracks*/
+
+	.tracks {
+		height: max-content;
+	}
+
+	.t-head {
+		text-align: center;
+		font-size: 3em;
+	}
+
+	#t-img {
+		margin-bottom: 2em;
+	}
+
+	/*Partners*/
+
+	.partners {
+		height: max-content;
+	}
+
+	#p-img {
+		margin-bottom: 2em;
+	}
+
+
+	/*FAQ*/
+
+	.ques {
+		font-size: 28px;
+	}
+
+	.ans {
+		font-size: 24px;
+	}
+
+	/*Footer*/
+
+	.footer {
+		height: max-content;
+	}
+
+	.footer_main {
+		margin: 0;
+	}
+
+}
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {}
 
