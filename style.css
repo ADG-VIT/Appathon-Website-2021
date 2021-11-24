@@ -707,6 +707,10 @@ a {
 		margin: 10px 0 10px 0;
 	}
 
+	.banner {
+		padding: 0 10px 0 0;
+	}
+
 	.banner-text .h3 {
 		width: 200px;
 	}
@@ -725,7 +729,7 @@ a {
 
 	.faq {
 		height: max-content;
-		margin-left: 0.5em;
+
 	}
 
 	#content {
