@@ -44,6 +44,13 @@ a {
 	src: local("Neue Haas Grotesk Display Medium"),
 		url("./fonts/NeueHaasDisplayMedium.woff") format("woff");
 }
+@font-face {
+	font-family: "Neue Haas Grotesk Light";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Neue Haas Grotesk Display Light"),
+		url("./fonts/NeueHaasDisplayLight.woff") format("woff");
+}
 
 @font-face {
 	font-family: "Termina W05 Bold";
@@ -88,7 +95,7 @@ a {
 	width: 100vw;
 	overflow: hidden;
 	padding: 4%;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .heading {
@@ -320,9 +327,10 @@ a {
 
 /* Timeline */
 .timeline {
-	height: 100vh !important;
+	height: 100vh;
 	padding-left: 10%;
-	/* overflow-y: scroll; */
+	padding-right: 10%;
+	overflow-y: scroll;
 	overflow-x: hidden;
 }
 
@@ -379,6 +387,25 @@ a {
 	padding-right: 1em;
 	height: auto;
 	background: #000000;
+}
+
+
+/* Parallax */
+.floating {
+	position: absolute;
+}
+.right {
+	right: -2%;
+}
+.right-one {
+	right: -5%;
+}
+.left {
+	left: -5%;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 576px) {
+
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
@@ -843,8 +870,6 @@ a {
 		padding-top: 20px;
 		height: fit-content;
 	}
-
-
 }
 
 @media only screen and (min-width: 401px) and (max-width: 576px) {}

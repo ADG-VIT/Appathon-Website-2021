@@ -1,0 +1,15 @@
+.floating-grid{
+    position: absolute;
+}
+
+.left-one{
+    left: -12em;
+}
+
+.right-one{
+    right: -10em;
+}
+
+.donut-one{
+    left: -5em;
+}

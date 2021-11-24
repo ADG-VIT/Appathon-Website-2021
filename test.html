@@ -23,13 +23,17 @@
         content="ADG is a student club at VIT Vellore with members who are passionate for iOS Development and other technical domains to develop their dream project." />
     <!-- SEO -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="faq.css" />
     <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="tracks.css">
+    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
     <section class="landing">
         <video autoplay muted loop id="vid">
-            <source src="./assets/bg.mp4" type="video/mp4">
+            <source src="./assets/Blender-1.mp4" type="video/mp4">
         </video>
         <div class="content">
             <img src="./assets/logoooo.svg" class="newlogo">
@@ -39,9 +43,8 @@
                 <p class="landing-para">MARK YOUR CALENDARS</p>
             </div>
             <div class="deadline">
-                <center><a href="https://vtop.vit.ac.in/vtop/initialProcess"> <img src="./assets/register.png"
-                            class="reg-btn" /></a> </center>
-
+                <a href="https://vtop.vit.ac.in/vtop/initialProcess"> <img src="./assets/register.png"
+                        class="reg-btn" /></a>
                 <p class="deadline-line">Deadline for registering: 20th November, 2021</p>
             </div>
             <p class="timer">00:00:00:00</p>
@@ -74,7 +77,7 @@
                 <p class="h4">Prizes & Schwags</p>
             </div>
             <div class="banner-text banner-two">
-                <p class="h3" id="a-date">November 26th - November 28th</p>
+                <p class="h3">November 26th - November 28th</p>
                 <p class="h4">38 hours non-stop</p>
             </div>
             <div class="banner-text banner-three">
@@ -85,16 +88,18 @@
     </section>
 
     <section class="tracks">
-        <p class="heading">tracks</p>
-        <div class="tracks-content">
-            <img src="assets/coming_soon.svg" alt="" id="t-img">
-        </div>
+        <div class="t-head">TRACKS</div>
+        <div class="floating-grid left-one rellax" data-rellax-speed="8"><img src="./assets/grid.png"></div>
+        <center><img src="assets/coming_soon.svg" alt="" id="t-img"></center>
+        <div class="floating-grid right-one rellax" data-rellax-speed="8"><img src="./assets/grid.png"></div>
     </section>
-    <div class="floating right rellax" data-rellax-speed="0.5"><img src="./assets/grid.png"></div>
+
     <section class="timeline">
         <p class="heading">TIMELINE</p>
         <div class="timeline_main">
-                <!-- <img src="./assets/top.png" class="timeline-top"> -->
+            <div class="timeline_info">
+                <img src="./assets/top.png" class="timeline-top">
+                <div class="item">
                     <div id="timeline">
                         <div>
                             <section class="year">
@@ -180,18 +185,29 @@
                             </section>
                         </div>
                     </div>
-                <!-- <img src="./assets/bottom.png" class="timeline-bottom"> -->
+                </div>
+                <img src="./assets/bottom.png" class="timeline-bottom">
+            </div>
         </div>
         </div>
+        <div class="floating-grid donut-one rellax"><img src="./assets/donut.png"></div>
     </section>
-    <div class="floating left rellax" data-rellax-speed="0.5"><img src="./assets/donut.png"></div>
+
     <section class="partners">
-        <p class="heading">partners</p>
-        <div class="partners-content">
-            <img src="assets/coming_soon.svg" alt="">
+        <p class="heading">Partners</p>
+        <center><img src="assets/coming_soon.svg" alt="" id="p-img"></center>
+        <!-- <span>
+            <p onclick="speakers()">SPEAKERS</p>
+            <p onclick="sponsors()">SPONSORS</p>
+        </span> -->
+        <!-- <div id="speakers" style="display: none">
+            <p>speakers</p>
         </div>
+        <div id="sponsors" style="display: none">
+            <p>sponsors</p>
+        </div> -->
     </section>
-    <div class="floating right-one rellax" data-rellax-speed="0.8"><img src="./assets/grid.png"></div>
+
     <section class="faq">
         <p class="heading">FAQ</p>
         <div id="content">
@@ -387,10 +403,11 @@
         </div>
     </section>
     <script src="./script.js"></script>
+    <script src="./anim.js"></script>
     <script src="./rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
-        // rellax.destroy();
+        rellax.refresh();
     </script>
 </body>
 

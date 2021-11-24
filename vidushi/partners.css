@@ -1,38 +1,59 @@
-body {
-  margin: 0;
-  background: #000000;
-}
-
 .partners {
-  margin: 5%;
-}
-.heading {
-  font-family: TerminaW05-Bold;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 175.5%;
-  /* or 84px */
-
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-span a {
-  display: inline-block;
-  font-family: MADE Soulmaze;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 36px;
-  /* identical to box height, or 150% */
-
-  color: #ffffff;
-  margin-right: 5%;
-  text-decoration: none;
+	overflow-y: scroll !important;
 }
 
+.partners p.heading {
+	margin-bottom: 0%;
+}
+.partners-content span p {
+	display: inline-block;
+	font-family: MADE;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height, or 150% */
+	color: #808080;
+	/* color: #ffffff; */
+	margin-right: 5%;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 2px solid #000000;
+}
+#spons-head {
+	color: #ffffff;
+	border-bottom: 2px solid #2a00a2;
+}
 span {
-  white-space: nowrap;
-  overflow-x: auto;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
+.sponsors {
+	/* border: 2px solid red; */
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+  flex-wrap: wrap;
+	height: 100%;
+	padding: 1%;
+}
+
+.sponsors .rows {
+	/* border: 2px solid white; */
+	padding: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: space-around;
+  flex-wrap: wrap;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.spons-img {
+	height: 80px;
+	width: auto;
 }
