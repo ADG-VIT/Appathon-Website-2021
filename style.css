@@ -44,6 +44,13 @@ a {
 	src: local("Neue Haas Grotesk Display Medium"),
 		url("./fonts/NeueHaasDisplayMedium.woff") format("woff");
 }
+@font-face {
+	font-family: "Neue Haas Grotesk Light";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Neue Haas Grotesk Display Light"),
+		url("./fonts/NeueHaasDisplayLight.woff") format("woff");
+}
 
 @font-face {
 	font-family: "Termina W05 Bold";
@@ -88,7 +95,7 @@ a {
 	width: 100vw;
 	overflow: hidden;
 	padding: 4%;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .heading {
@@ -298,7 +305,7 @@ img.title2 {
 .timeline {
 	height: 100vh !important;
 	padding-left: 10%;
-	/* overflow-y: scroll; */
+	overflow-y: scroll;
 	overflow-x: hidden;
 }
 
@@ -326,6 +333,19 @@ img.title2 {
 	height: 150vh !important;
 }
 
+/* Parallax */
+.floating {
+	position: absolute;
+}
+.right {
+	right: -2%;
+}
+.right-one {
+	right: -5%;
+}
+.left {
+	left: -5%;
+}
 @media only screen and (min-width: 401px) and (max-width: 576px) {
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -343,7 +363,7 @@ img.title2 {
 		display: none;
 	}
 
-	.timer{
+	.timer {
 		font-size: 36px;
 	}
 }

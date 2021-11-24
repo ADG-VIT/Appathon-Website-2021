@@ -4,18 +4,16 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #ffffff;
-
     margin: 0;
-    padding: 4em;
+    padding: 5%;
+    padding-left: 10%;
 }
 
-.t-head {
-    font-family: Termina W05 Bold;
-    font-size: 1.5em;
-    text-align: left;
-
-}
-
-#t-img {
-    padding-top: 6em;
+.tracks-content{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

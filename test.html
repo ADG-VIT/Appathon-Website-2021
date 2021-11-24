@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="timeline.css" />
     <link rel="stylesheet" href="tracks.css">
     <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
@@ -87,12 +88,12 @@
     </section>
 
     <section class="tracks">
-        <p class="heading">tracks</p>
-        <div class="tracks-content">
-            <img src="assets/coming_soon.svg" alt="" id="t-img">
-        </div>
+        <div class="t-head">TRACKS</div>
+        <div class="floating-grid left-one rellax" data-rellax-speed="8"><img src="./assets/grid.png"></div>
+        <center><img src="assets/coming_soon.svg" alt="" id="t-img"></center>
+        <div class="floating-grid right-one rellax" data-rellax-speed="8"><img src="./assets/grid.png"></div>
     </section>
-    <div class="floating right rellax" data-rellax-speed="0.5"><img src="./assets/grid.png"></div>
+
     <section class="timeline">
         <p class="heading">TIMELINE</p>
         <div class="timeline_main">
@@ -189,17 +190,26 @@
             </div>
         </div>
         </div>
+        <div class="floating-grid donut-one rellax"><img src="./assets/donut.png"></div>
     </section>
-    <div class="floating left rellax" data-rellax-speed="0.5"><img src="./assets/donut.png"></div>
+
     <section class="partners">
-        <p class="heading">partners</p>
-        <div class="partners-content">
-            <img src="assets/coming_soon.svg" alt="">
+        <p class="heading">Partners</p>
+        <center><img src="assets/coming_soon.svg" alt="" id="p-img"></center>
+        <!-- <span>
+            <p onclick="speakers()">SPEAKERS</p>
+            <p onclick="sponsors()">SPONSORS</p>
+        </span> -->
+        <!-- <div id="speakers" style="display: none">
+            <p>speakers</p>
         </div>
+        <div id="sponsors" style="display: none">
+            <p>sponsors</p>
+        </div> -->
     </section>
-    <div class="floating right-one rellax" data-rellax-speed="0.8"><img src="./assets/grid.png"></div>
+
     <section class="faq">
-    <p class="heading">FAQ</p>
+        <p class="heading">FAQ</p>
         <div id="content">
             <div class="box">
                 <a href="#q1" class="ques"><span> Do I need to pay any money to register for the “App-A-Thon”?
@@ -393,10 +403,11 @@
         </div>
     </section>
     <script src="./script.js"></script>
+    <script src="./anim.js"></script>
     <script src="./rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
-        // rellax.destroy();
+        rellax.refresh();
     </script>
 </body>
 
