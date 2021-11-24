@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tracks.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>App-a-Thon 2021</title>
+</head>
+
+<body>
+    <section class="tracks">
+        <p class="heading">tracks</p>
+        <div class="tracks-content">
+            <h3 class="slide-in-demo">Slide elements in</h3>
+        </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./jScrollability.js"></script>
+    <script>
+        (function ($) {
+                $(document).ready(function () {
+                    $.jScrollability([
+                        {
+                            'selector': '.slide-in-demo',
+                            'start': 'parent',
+                            'end': 'parent',
+                            'fn': {
+                                'left': {
+                                    'start': 100,
+                                    'end': 0,
+                                    'unit': '%'
+                                }
+                            }
+                        }
+                    ]);
+                });
+            })(jQuery);
+    </script>
+</body>
+</html>

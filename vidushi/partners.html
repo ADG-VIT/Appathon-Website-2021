@@ -5,34 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="../style.css">
     <title>App-a-Thon 2021</title>
 
-    <script type="text/javascript">
+    <script>
         function speakers() {
             document.getElementById("speakers").style.display = "block";
             document.getElementById("sponsors").style.display = "none";
+            document.getElementById("spkr-head").style.color = "#ffffff";
+            document.getElementById("spkr-head").style.borderBottom = "2px solid #2a00a2";
+            document.getElementById("spons-head").style.color = "#808080";
+            document.getElementById("spons-head").style.borderBottom = "2px solid #000000";
         }
         function sponsors() {
             document.getElementById("sponsors").style.display = "block";
             document.getElementById("speakers").style.display = "none";
+            document.getElementById("spons-head").style.color = "#ffffff";
+            document.getElementById("spons-head").style.borderBottom = "2px solid #2a00a2";
+            document.getElementById("spkr-head").style.color = "#808080";
+            document.getElementById("spkr-head").style.borderBottom = "2px solid #000000";
         }
     </script>
 
 </head>
 <body>
-    <div class="partners">
-        <h1 class="heading">Partners</h1>
-        <span>
-            <p onclick="speakers()">SPEAKERS</p>
-            <p onclick="sponsors()">SPONSORS</>
-        </span>
-        <div id="speakers" style="display: none">
-            <p>speakers</p>
+    <section class="partners">
+        <p class="heading">partners</p>
+        <div class="partners-content">
+            <span>
+                <p id="spkr-head" onclick="speakers()">SPEAKERS</p>
+                <p id="spons-head" onclick="sponsors()">SPONSORS</p>
+            </span>
+            <div id="speakers" style="display: none">
+                <p>speakers</p>
+            </div>
+            <div class="sponsors" id="sponsors">
+                <div class="rows">
+                    <img class="spons-img" src="../assets/sponsors/1.png">
+                    <img class="spons-img" src="../assets/sponsors/2.png">
+                    <img class="spons-img" src="../assets/sponsors/3.png">
+                    <img class="spons-img" src="../assets/sponsors/4.png">
+                </div>
+                <div class="rows">
+                    <img class="spons-img" src="../assets/sponsors/3.png">
+                    <img class="spons-img" src="../assets/sponsors/4.png">
+                    <img class="spons-img" src="../assets/sponsors/2.png">
+                    <img class="spons-img" src="../assets/sponsors/1.png">
+                </div>
+                <div class="rows">
+                    <img class="spons-img" src="../assets/sponsors/2.png">
+                    <img class="spons-img" src="../assets/sponsors/3.png">
+                    <img class="spons-img" src="../assets/sponsors/1.png">
+                    <img class="spons-img" src="../assets/sponsors/4.png">
+                </div>
+                <div class="rows">
+                    <img class="spons-img" src="../assets/sponsors/1.png">
+                    <img class="spons-img" src="../assets/sponsors/4.png">
+                    <img class="spons-img" src="../assets/sponsors/2.png">
+                    <img class="spons-img" src="../assets/sponsors/3.png">
+                </div>
+            </div>
         </div>
-        <div id="sponsors" style="display: none">
-            <p>sponsors</p>
-        </div>
-    </div>
-    
+    </section>
 </body>
 </html>
