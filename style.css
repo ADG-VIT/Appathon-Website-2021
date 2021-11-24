@@ -334,6 +334,14 @@ img.title2 {
 	height: 150vh !important;
 }
 
+.faq_page {
+	padding-top: 100px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: auto;
+	background: #000000;
+}
+
 /* Parallax */
 .floating {
 	position: absolute;
@@ -362,9 +370,5 @@ img.title2 {
 	} */
 	.timeline {
 		display: none;
-	}
-
-	.timer {
-		font-size: 36px;
 	}
 }
