@@ -79,3 +79,16 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 450px)")
 myFunction(x) // Call listener function at run time
 x.addEventListener(myFunction) // Attach listener function on state changes
+
+
+
+function myFunction1(y) {
+	if (x.matches) { // If media query matches
+		document.body.querySelector('#a-date').innerHTML = "26 - 28 NOVEMBER";
+
+	}
+}
+
+var y = window.matchMedia('(min-width: 577px) and (max-width: 768px)')
+myFunction1(y) // Call listener function at run time
+y.addEventListener(myFunction1) // Attach listener function on state changes
