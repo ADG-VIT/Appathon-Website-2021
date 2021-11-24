@@ -83,6 +83,20 @@ a {
 	src: local("MADE"), url("./fonts/MADESoulmaze.otf") format("opentype");
 }
 
+/* Parallax */
+.floating {
+	position: absolute;
+}
+.right {
+	right: -2%;
+}
+.right-one {
+	right: -5%;
+}
+.left {
+	left: -5%;
+}
+
 /* Sections */
 .landing,
 .about,
@@ -318,11 +332,10 @@ a {
 	font-family: Termina W05 Bold;
 	font-size: 1.5em;
 	text-align: left;
-
 }
 
 #t-img {
-	padding-top: 6em;
+	padding-top: 3em;
 }
 
 /* Timeline */
@@ -368,11 +381,10 @@ a {
 	font-family: Termina W05 Bold;
 	font-size: 1.5em;
 	text-align: left;
-
 }
 
 #p-img {
-	padding-top: 6em;
+	padding-top: 3em;
 }
 
 /* FAQ */
@@ -389,7 +401,6 @@ a {
 	background: #000000;
 }
 
-
 /* Parallax */
 .floating {
 	position: absolute;
@@ -405,7 +416,6 @@ a {
 }
 
 @media only screen and (min-width: 401px) and (max-width: 576px) {
-
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
@@ -524,7 +534,6 @@ a {
 	/* to support IE 9 */
 	transform: rotate(-90deg);
 }
-
 
 /* Footer */
 .footer {
@@ -694,11 +703,10 @@ a {
 	color: #ffffff;
 }
 
-
-
-
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
-
+	.floating {
+		display: none;
+	}
 	.heading {
 		font-size: 3em;
 		text-align: center;
@@ -747,11 +755,10 @@ a {
 	.about-para {
 		padding-top: 40px;
 		padding-bottom: 40px;
-		width: 700px;
+		width: 90%;
 		line-height: 2em;
 		font-size: 28px;
 	}
-
 
 	/*Tracks*/
 
@@ -778,7 +785,6 @@ a {
 		margin-bottom: 2em;
 	}
 
-
 	/*FAQ*/
 
 	.ques {
@@ -798,13 +804,18 @@ a {
 	.footer_main {
 		margin: 0;
 	}
-
 }
 
-@media only screen and (min-width: 769px) and (max-width: 990px) {}
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+	.floating {
+		display: none;
+	}
+}
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-
+	.floating {
+		display: none;
+	}
 	/*Landing*/
 	.Appathon-img {
 		width: 80%;
@@ -858,7 +869,6 @@ a {
 
 	.faq {
 		height: max-content;
-
 	}
 
 	#content {
@@ -872,10 +882,10 @@ a {
 	}
 }
 
-@media only screen and (min-width: 401px) and (max-width: 576px) {}
-
-@media only screen and (max-width: 400px) {
-
+@media only screen and (min-width: 401px) and (max-width: 576px) {
+	.floating {
+		display: none;
+	}
 	/*Laanding*/
 	.Appathon-img {
 		width: 75%;
@@ -932,7 +942,7 @@ a {
 	.tracks {
 		padding: 0px;
 		padding-top: 40px;
-
+		height: 60vh;
 	}
 
 	.t-head {
@@ -944,25 +954,39 @@ a {
 		width: 80%;
 	}
 
-
 	/*Partners*/
 
 	.partners {
 		padding: 40px 0 0 0;
+		height: 60vh;
 	}
 
 	.heading {
 		font-size: 1.7em;
-		padding-left: 10%;
+		display: flex;
+		justify-content: center;
 	}
 
 	#p-img {
 		width: 80%;
 	}
-
+	/* Timeline */
+	#timeline h3 {
+		font-size: 16px !important;
+	}
+	#timeline section.year section ul li {
+		width: 50% !important;
+		font-size: 14px !important;
+		margin-left: 50% !important;
+	}
+	#timeline section.year section ul:first-of-type:after {
+		left: 48% !important;
+	}
 
 	/* FAQ */
-
+	.faq {
+		padding: 3%;
+	}
 	#content {
 		margin-left: 0px;
 	}
@@ -972,13 +996,15 @@ a {
 	}
 
 	.ques {
-		font-size: 18px;
-	}
-
-	.ans {
 		font-size: 16px;
 	}
 
+	.ans {
+		font-size: 14px;
+	}
+	.newlogo {
+		left: auto;
+	}
 
 	/*Footer*/
 
@@ -1000,6 +1026,167 @@ a {
 	}
 
 	.footer_up .h4 {
+		width: 300%;
+		line-height: 30px;
+		margin: 10px 0 0 0;
+	}
+
+	.icons {
+		height: 50px;
+		width: 100px;
+	}
+
+	.links p {
+		line-height: 15px;
+		width: 200%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.floating {
+		display: none;
+	}
+	/*Laanding*/
+	.Appathon-img {
+		width: 75%;
+		margin-top: 110px;
+	}
+
+	#edate {
+		font-size: 1em;
+	}
+
+	.date .landing-para {
+		margin-top: 20px;
+		font-size: 0.75em;
+	}
+
+	.reg-btn {
+		width: 60%;
+		height: auto;
+		align-self: center;
+		margin-top: 30px;
+	}
+
+	.deadline-line {
+		font-size: 20px;
+	}
+
+	.timer {
+		font-size: 1.6em;
+	}
+
+	/* 	About */
+
+	.about {
+		height: max-content;
+	}
+
+	img.title2 {
+		width: 70%;
+		margin-bottom: 20px;
+	}
+
+	.about-para {
+		font-size: 16px;
+		width: 250px;
+	}
+
+	.banner {
+		flex-direction: column;
+		height: max-content;
+	}
+
+	/* Tracks */
+
+	.tracks {
+		padding: 0px;
+		padding-top: 40px;
+		height: 60vh;
+	}
+
+	.t-head {
+		font-size: 2em;
+		padding-left: 15%;
+	}
+
+	#t-img {
+		width: 80%;
+	}
+
+	/*Partners*/
+
+	.partners {
+		padding: 40px 0 0 0;
+		height: 60vh;
+	}
+
+	.heading {
+		font-size: 1.7em;
+		display: flex;
+		justify-content: center;
+	}
+
+	#p-img {
+		width: 80%;
+	}
+	/* Timeline */
+	#timeline h3 {
+		font-size: 16px !important;
+	}
+	#timeline section.year section ul li {
+		width: 50% !important;
+		font-size: 14px !important;
+		margin-left: 50% !important;
+	}
+	#timeline section.year section ul:first-of-type:after {
+		left: 48% !important;
+	}
+
+	/* FAQ */
+	.faq {
+		padding: 3%;
+	}
+	#content {
+		margin-left: 0px;
+	}
+
+	.box {
+		margin-left: 0.5em;
+	}
+
+	.ques {
+		font-size: 16px;
+	}
+
+	.ans {
+		font-size: 14px;
+	}
+	.newlogo {
+		left: auto;
+	}
+
+	/*Footer*/
+
+	.footer {
+		height: fit-content;
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer_main {
+		width: max-content;
+	}
+
+	.footer_up {
+		flex-direction: column;
+		align-self: flex-start;
+		width: max-content;
+		padding-left: 2.4em;
+	}
+
+	.footer_up .h4 {
+		width: 300%;
 		line-height: 30px;
 		margin: 10px 0 0 0;
 	}
@@ -1012,5 +1199,4 @@ a {
 	.links p {
 		line-height: 15px;
 	}
-
 }
