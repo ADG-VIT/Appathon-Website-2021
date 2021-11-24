@@ -716,6 +716,7 @@ a {
 	/* Landing */
 
 	.newlogo {
+		top: 10%;
 		height: auto;
 		width: 15%;
 	}
@@ -1003,6 +1004,7 @@ a {
 		font-size: 14px;
 	}
 	.newlogo {
+		top: 10%;
 		left: auto;
 	}
 
@@ -1163,6 +1165,7 @@ a {
 		font-size: 14px;
 	}
 	.newlogo {
+		top: 10%;
 		left: auto;
 	}
 
