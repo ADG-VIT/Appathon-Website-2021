@@ -92,3 +92,70 @@ function myFunction1(y) {
 var y = window.matchMedia('(min-width: 577px) and (max-width: 768px)')
 myFunction1(y) // Call listener function at run time
 y.addEventListener(myFunction1) // Attach listener function on state changes
+
+
+var card_one = document.querySelector(".card_one");
+var heading_one = document.querySelector(".inside_main_heading_one");
+
+card_one.addEventListener("mouseenter", () => {
+	heading_one.classList.add("hidden");
+});
+
+card_one.addEventListener("mouseleave", () => {
+	heading_one.classList.remove("hidden");
+});
+
+var card_two = document.querySelector(".card_two");
+var heading_two = document.querySelector(".inside_main_heading_two");
+
+card_two.addEventListener("mouseenter", () => {
+	heading_two.classList.add("hidden");
+});
+
+card_two.addEventListener("mouseleave", () => {
+	heading_two.classList.remove("hidden");
+});
+
+var card_three = document.querySelector(".card_three");
+var heading_three = document.querySelector(".inside_main_heading_three");
+
+card_three.addEventListener("mouseenter", () => {
+	heading_three.classList.add("hidden");
+});
+
+card_three.addEventListener("mouseleave", () => {
+	heading_three.classList.remove("hidden");
+});
+
+var card_four = document.querySelector(".card_four");
+var heading_four = document.querySelector(".inside_main_heading_four");
+
+card_four.addEventListener("mouseenter", () => {
+	heading_four.classList.add("hidden");
+});
+
+card_four.addEventListener("mouseleave", () => {
+	heading_four.classList.remove("hidden");
+});
+
+var card_five = document.querySelector(".card_five");
+var heading_five = document.querySelector(".inside_main_heading_five");
+
+card_five.addEventListener("mouseenter", () => {
+	heading_five.classList.add("hidden");
+});
+
+card_five.addEventListener("mouseleave", () => {
+	heading_five.classList.remove("hidden");
+});
+
+var card_six = document.querySelector(".card_six");
+var heading_six = document.querySelector(".inside_main_heading_six");
+
+card_six.addEventListener("mouseenter", () => {
+	heading_six.classList.add("hidden");
+});
+
+card_six.addEventListener("mouseleave", () => {
+	heading_six.classList.remove("hidden");
+});
