@@ -376,6 +376,7 @@ a {
 
 /* Partners */
 .partners span {
+	overflow: hidden;
 	font-family: MADE;
 	font-style: normal;
 	font-weight: normal;
@@ -384,7 +385,7 @@ a {
 	/* identical to box height, or 150% */
 	color: #ffffff;
 	display: flex;
-	width: 25%;
+
 	justify-content: space-between;
 }
 
@@ -1151,7 +1152,7 @@ a {
 
 	.partners {
 		padding: 40px 0 0 0;
-		height: 60vh;
+
 	}
 
 	.heading {

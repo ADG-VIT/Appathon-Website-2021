@@ -1,5 +1,5 @@
 .partners {
-	overflow-y: scroll !important;
+	overflow-y: hidden;
 }
 
 .partners p.heading {
@@ -20,6 +20,7 @@
 	text-decoration: none;
 	cursor: pointer;
 	border-bottom: 2px solid #000000;
+
 }
 
 .cards {
@@ -134,13 +135,7 @@ p {
 	color: #ffffff;
 }
 
-.footer {
-	bottom: 0;
-	position: fixed;
-	width: 100vw;
-	height: 100vw;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) -60.73%, #000000 100%);
-}
+
 
 .image_description_title {
 	transform: translate3d(-30px, 25px, 0);
@@ -206,6 +201,8 @@ p {
 .hidden {
 	display: none;
 }
+
+
 
 @media only screen and (min-width: 991px) and (max-width: 1281px) {
 	.cards {
@@ -552,6 +549,6 @@ span {
 }
 
 .spons-img {
-	height: 80px;
-	width: auto;
+	width: 5em;
+	height: auto;
 }
