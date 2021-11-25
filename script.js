@@ -2,7 +2,7 @@
 var timer = document.querySelector(".timer");
 
 function updateTimer() {
-	future = Date.parse("nov 26, 2021 19:30:00");
+	future = Date.parse("November 26, 2021, 19:30:00");
 	now = new Date();
 	diff = future - now;
 
