@@ -345,7 +345,7 @@ a {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #ffffff;
-
+	height: max-content;
 	margin: 0;
 	padding: 4em;
 }
