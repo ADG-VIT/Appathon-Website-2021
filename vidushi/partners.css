@@ -1,7 +1,3 @@
-.partners {
-	overflow-y: hidden;
-}
-
 .partners p.heading {
 	margin-bottom: 0%;
 }
@@ -549,6 +545,7 @@ span {
 }
 
 .spons-img {
-	width: 5em;
-	height: auto;
+	height: 90px;
+	width: auto;
+
 }
