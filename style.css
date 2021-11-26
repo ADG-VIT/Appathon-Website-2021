@@ -385,7 +385,7 @@ a {
 	/* identical to box height, or 150% */
 	color: #ffffff;
 	display: flex;
-
+	height: max-content;
 	justify-content: space-between;
 }
 
