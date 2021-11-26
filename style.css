@@ -283,7 +283,7 @@ a {
 	width: 33%;
 }
 
-.about-para {
+.about-para #ab-pr {
 	font-family: Neue Haas Grotesk Medium;
 	font-style: normal;
 	font-weight: 400;
@@ -778,7 +778,7 @@ a {
 		margin-top: 20px;
 	}
 
-	.about-para {
+	.about-para #ab-pr {
 		padding-top: 40px;
 		padding-bottom: 40px;
 		width: 90%;
@@ -870,7 +870,7 @@ a {
 		margin: 20px 0 10px 0;
 	}
 
-	.about-para {
+	.about-para #ab-pr {
 		margin: 10px 0 10px 0;
 	}
 
@@ -955,7 +955,7 @@ a {
 		margin-bottom: 20px;
 	}
 
-	.about-para {
+	.about-para #ab-pr {
 		font-size: 16px;
 		width: 250px;
 	}
@@ -1121,7 +1121,7 @@ a {
 		margin-bottom: 20px;
 	}
 
-	.about-para {
+	.about-para #ab-pr {
 		font-size: 16px;
 		width: 250px;
 	}
